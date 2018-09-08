@@ -1,0 +1,166 @@
+*{
+  font-family: "Dancing Script";
+}
+header{
+  width: 900px;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  animation: slidein 3s;
+}
+
+@-webkit-keyframes slidein{
+  0%{
+      margin-top: 150%;
+  }
+  60%{
+      margin-top: -5%;
+  }
+  100%{
+      margin-top: 0%;
+  }
+}
+
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu h2{
+  margin: 10px;
+}
+
+header nav{
+  color: white;
+}
+header h1{
+  margin: 20px;
+  text-shadow: 2px 2px #02010a;
+}
+
+.contenedor1{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.contenedor2{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.articulo1{
+  width: 100%;
+  background-color: #82c3a6;
+}
+
+.articulo2{
+  width: 50%;
+  background-color: #d5c75f;
+}
+.articulo3{
+  width: 50%;
+  background-color: #d5c75f;
+}
+.articulo1 img{
+  margin-top: 20px;
+  width: 100%;
+}
+.articulo2 img{
+  width: 100%;
+  transition-duration: 2s;
+}
+.articulo2 img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.articulo3 img{
+  width: 100%;
+  transition-duration: 2s;
+}
+.articulo3 img:hover{
+  -webkit-transform: translate(20px, -5px);
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+figure p{
+  text-align: center;
+}
+
+@media(max-width:900px){
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  header h1{
+    text-align: center;
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedor1{
+    width: 100%;
+    display: flex;
+  }
+  .articulo1{
+    width: 100%;
+}
+  .contenedor2{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+  .articulo2{
+    width: 100%;
+  }
+  .articulo3{
+    width: 100%;
+  }
+
+  footer .piedep{
+    text-align: center;
+    width:100%;
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.piedep{
+  clear: both;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+}
+
+.contacto{
+  width: 100%;
+  margin: 5px;
+}
+.terminos{
+  width: 100%;
+  margin: 5px;
+}
+.rsociales{
+  width: 100%;
+  margin: 5px;
+}
+.derechos{
+  width: 100%;
+  margin: 5px;
+}
+
+img[src$=".png"]{
+  width: 30px;
+  padding-right: 2px;
+}
